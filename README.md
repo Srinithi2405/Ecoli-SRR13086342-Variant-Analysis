@@ -39,12 +39,13 @@ FASTQ
 
 ## Key Results
 
-- 314 variants identified
-- 164 missense variant entries
-- 152 unique genes containing missense variants
-- Genotype distribution and amino-acid substitutions were examined
-- Physicochemical property changes were classified for missense substitutions
-- Genes containing multiple missense variants were summarized
+* 314 genomic variants were identified: 287 SNPs, 4 insertions, and 23 deletions.
+* Missense variants were identified across multiple genes representing variants predicted to cause amino-acid substitutions.
+* 12 genes contained two distinct missense variants each:ydjH, recE, nth, narH, lsrF, lpxT, lhr, glsA, flhA, fhuE, ffh, and atoB.
+* The remaining genes in the missense dataset contained one identified missense variant each.
+* 26 variants were classified by SnpEff as HIGH impact, mainly based on predicted frameshift and stop-gained effects.
+* These functional-impact classifications are computational annotations and do not confirm experimental biological effects.
+
 
 ## Missense Variant Analysis
 
