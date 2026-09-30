@@ -1,14 +1,15 @@
 #!/bin/bash
 
-# Align paired-end E. coli WGS reads to the NC_000913.3 reference
+# Align trimmed paired-end E. coli WGS reads
+# Reference: E. coli K-12 MG1655 (NC_000913.3)
 
 mkdir -p results/alignment
 
 bwa mem \
     -t 4 \
     reference/NC_000913.3.fasta \
-    data/raw/SRR13086342_1.fastq \
-    data/raw/SRR13086342_2.fastq \
+    data/trimmed/SRR13086342_1.trimmed.fastq.gz \
+    data/trimmed/SRR13086342_2.trimmed.fastq.gz \
     > results/alignment/SRR13086342.sam
 
 samtools view \
