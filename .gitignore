@@ -1,0 +1,33 @@
+# Raw sequencing data
+*.fastq
+*.fastq.gz
+*.sra
+
+# Large alignment/intermediate files
+*.sam
+*.bam
+*.bam.bai
+*.pileup
+
+# Reference indexes
+*.amb
+*.ann
+*.bwt
+*.pac
+*.sa
+*.fai
+
+# Temporary/output files
+output_*.fastq.gz
+out.txt
+
+# FastQC generated archives
+*_fastqc.zip
+
+# Logs
+*.log
+
+# Local SnpEff installation/data
+snpEff/
+snpeff_data/
+snpEff_latest_core*/
