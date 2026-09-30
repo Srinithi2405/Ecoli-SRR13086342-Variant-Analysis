@@ -5,9 +5,13 @@
 
 mkdir -p results/annotation
 
+# Download the SnpEff database if it is not already installed
+snpEff download Escherichia_coli_str_k_12_substr_mg1655
+
 # Annotate filtered variants
 snpEff \
     -v \
-    Escherichia_coli_K12 \
+    -stats results/annotation/SRR13086342.snpeff_summary.html \
+    Escherichia_coli_str_k_12_substr_mg1655 \
     results/variants/filtered/SRR13086342.filtered.vcf.gz \
     > results/annotation/SRR13086342.ann.vcf
